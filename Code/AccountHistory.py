@@ -127,3 +127,9 @@ class Loader():
         for key in account.keys():
             accountIDs[key].append(account[key])
         return accountIDs
+    
+class updateAccount():
+
+    def update(id:int,accountName:str,number:int,type:str,owner:str,bank:str):
+        accountIDs = pd.read_csv(Loader.accountId_filename)
+        #TODO:
